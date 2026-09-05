@@ -71,40 +71,40 @@ The **Enterprise Document Intelligence & Comparison Engine** addresses this chal
 ## <a id="system-architecture"></a>🏗️ System Architecture
 
 ```text
-               +----------------------------------------+
-               |              Uploaded PDF              |
-               +-------------------+--------------------+
-                                   |
-                                   v
-                       +-----------+-----------+
-                       |   PyPDF Text Extraction|
-                       +-----------+-----------+
-                                   |
-             +---------------------+---------------------+
-             |                                           |
-             v                                           v
-  +----------+----------+                     +----------+----------+
-  |   Fixed Text Chunks  |                     |  Full/Truncated Text    |
-  +----------+----------+                     +----------+----------+
-             |                                           |
-             v                                           v
-+------------+------------+                   +----------+----------+
-| sentence-transformers    |                   | Google FLAN-T5 Model    |
-| (all-MiniLM-L6-v2)      |                   | (Summary & Questions)   |
-+------------+------------+                   +----------+----------+
-             |                                           |
-             v                                           v
-+------------+------------+                   +----------+----------+
-|  FAISS L2 Vector Index  |                   | Pandas Data Processing  |
-+------------+------------+                   +----------+----------+
-             |                                           |
-             +---------------------+---------------------+
-                                   |
-                                   v
-               +-------------------+--------------------+
-               |       Streamlit Interactive UI         |
-               | (Summary, Charts, Q&A, Comparison)     |
-               +----------------------------------------+
+                       +----------------------------------------+
+                       |              Uploaded PDF              |
+                       +-------------------+--------------------+
+                                           |
+                                           v
+                               +-----------+-----------+
+                               | PyPDF Text Extraction |
+                               +-----------+-----------+
+                                           |
+                     +---------------------+---------------------+
+                     |                                           |
+                     v                                           v
+          +----------+----------+                     +----------+----------+
+          |  Fixed Text Chunks  |                     | Full/Truncated Text |
+          +----------+----------+                     +----------+----------+
+                     |                                           |
+                     v                                           v
+        +------------+------------+                   +----------+-------------+
+        | sentence-transformers   |                   |  Google FLAN-T5 Model  |
+        |  (all-MiniLM-L6-v2)     |                   | (Summary & Questions)  |
+        +------------+------------+                   +----------+-------------+
+                     |                                           |
+                     v                                           v
+        +------------+------------+                   +----------+-------------+
+        |  FAISS L2 Vector Index  |                   | Pandas Data Processing |
+        +------------+------------+                   +----------+-------------+
+                     |                                           |
+                     +---------------------+---------------------+
+                                           |
+                                           v
+                       +-------------------+--------------------+
+                       |       Streamlit Interactive UI         |
+                       |  (Summary, Charts, Q&A, Comparison)    |
+                       +----------------------------------------+
 
 ```
 
@@ -279,7 +279,5 @@ To maintain application performance and prevent setup issues, keep the following
   <Elicitation label="Generate requirements.txt file contents" query="Give me the exact text needed for the requirements.txt file for this project."/>
   <Elicitation label="Deploy to Streamlit Community Cloud" query="Show me how to deploy this GitHub repository to Streamlit Community Cloud for free."/>
 </ElicitationsGroup>
-
----
 
 <p align="right"><a href="#top" onclick="scrollToTop(event)" style="text-decoration: none; font-weight: 600;">Back to Top ↑</a></p>
