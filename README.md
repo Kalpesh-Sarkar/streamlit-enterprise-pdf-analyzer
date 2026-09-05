@@ -1,3 +1,9 @@
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
 <a id="top"></a>
 
 # ⚡ Enterprise Document Intelligence & Comparison Engine
@@ -16,17 +22,17 @@
 
 - [Overview](#-overview)
 - [Key Features](#-key-features)
-- [System Architecture](#-system-architecture)
+- [System Architecture](#system-architecture)
 - [Project Directory Structure](#-project-directory-structure)
 - [Prerequisites & Development Environment](#-prerequisites--development-environment)
-- [Step-by-Step Installation](#-step-by-step-installation)
+- [Step-by-Step Installation](#step-by-step-installation)
 - [How to Run the Application](#-how-to-run-the-application)
-- [Detailed Component Breakdown](#-detailed-component-breakdown)
+- [Detailed Component Breakdown](#detailed-component-breakdown)
   - [1. Executive Summary \& Question Framing Engine](#1-executive-summary--question-framing-engine)
   - [2. Dynamic Interactive Analytics Studio](#2-dynamic-interactive-analytics-studio)
   - [3. Context-Aware Vector Retrieval Q\&A](#3-context-aware-vector-retrieval-qa)
   - [4. Dual-Document Delta Comparison Engine](#4-dual-document-delta-comparison-engine)
-- [⚠️ Critical Pitfalls \& Things to Avoid](#️-critical-pitfalls--things-to-avoid)
+- [Critical Pitfalls \& Things to Avoid](#️-critical-pitfalls--things-to-avoid)
 - [Troubleshooting](#-troubleshooting)
 - [License \& Acknowledgments](#-license--acknowledgments)
 
@@ -68,7 +74,7 @@ The **Enterprise Document Intelligence & Comparison Engine** addresses this chal
 
 ---
 
-## 🏗️ System Architecture
+## <a id="system-architecture"></a>🏗️ System Architecture
 
 ```text
                +----------------------------------------+
@@ -141,7 +147,7 @@ Before running the application, ensure your local system meets the following req
 
 ---
 
-## ⚙️ Step-by-Step Installation
+## <a id="step-by-step-installation"></a>⚙️ Step-by-Step Installation
 
 #### 1. Clone or Download the Repository
 
@@ -197,7 +203,7 @@ Streamlit will initialize the environment, download model weights on the first r
 
 ---
 
-## 🛠️ Detailed Component Breakdown
+## <a id="detailed-component-breakdown"></a>🛠️ Detailed Component Breakdown
 
 #### 1. Executive Summary & Question Framing Engine
 
