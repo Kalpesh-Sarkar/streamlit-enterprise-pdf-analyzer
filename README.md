@@ -105,7 +105,7 @@ The **Enterprise Document Intelligence & Comparison Engine** addresses this chal
                +----------------------------------------+
 ```
 ## 📂 Project Directory Structure
-
+```
 enterprise-doc-intelligence-rag/
 ├── app.py                  # Main Streamlit application UI & reactive state handling
 ├── requirements.txt        # Python dependency specifications
@@ -113,7 +113,7 @@ enterprise-doc-intelligence-rag/
 └── src/
     ├── __init__.py         # Package initialization
     └── rag_engine.py       # Core RAG engine: Embeddings, FAISS, Summaries & Comparisons
-
+```
 ## 💻 Prerequisites
 
 Before running the application, ensure your local system meets the following requirements:
