@@ -18,7 +18,7 @@
 - [Key Features](#-key-features)
 - [System Architecture](#-system-architecture)
 - [Project Directory Structure](#-project-directory-structure)
-- [Prerequisites](#-prerequisites)
+- [Prerequisites & Development Environment](#-prerequisites-development-environment)
 - [Step-by-Step Installation](#-step-by-step-installation)
 - [How to Run the Application](#-how-to-run-the-application)
 - [Detailed Component Breakdown](#-detailed-component-breakdown)
@@ -127,7 +127,10 @@ enterprise-doc-intelligence-rag/
 
 ## 💻 Prerequisites & Development Environment
 
-* **IDE Recommendation:** This project was built and optimized using **PyCharm**. Operating the repository through PyCharm makes it significantly easier to manage your Python virtual environment, install requirements via the built-in package manager, and run Streamlit directly from the terminal tool window.
+```
+IDE Recommendation: This project was built and optimized using PyCharm. Operating the repository through PyCharm makes it significantly easier to manage your Python virtual environment, install requirements via the built-in package manager, and run Streamlit directly from the terminal tool window.
+
+```
 
 Before running the application, ensure your local system meets the following requirements:
 
@@ -277,4 +280,4 @@ To maintain application performance and prevent setup issues, keep the following
   <Elicitation label="Deploy to Streamlit Community Cloud" query="Show me how to deploy this GitHub repository to Streamlit Community Cloud for free."/>
 </ElicitationsGroup>
 
-[Back to Top](#top)
+<p align="right"><a href="#top" style="text-decoration: none; font-weight: 600;">Back to Top ↑</a></p>
