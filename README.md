@@ -174,11 +174,11 @@ Streamlit will initialize the environment, download model weights on the first r
 2. Dynamic Interactive Analytics Studio
 - Text strings undergo regex pattern extraction to build dynamic DataFrames for:
 
--- Financial amounts ($M, $B).
+  - Financial amounts ($M, $B).
 
--- Relative percentages and metric trends.
+  - Relative percentages and metric trends.
 
--- Keyword frequency rankings (excluding standard English stop words).
+  - Keyword frequency rankings (excluding standard English stop words).
 
 - Users can use the Chart Control Bar to adjust keyword density displays, change chart sort orders, filter out specific themes, or isolate specific chunk length ranges.
 
