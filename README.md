@@ -1,10 +1,3 @@
-<script>
-  function scrollToTop(event) {
-    event.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-</script>
-
 <a id="top"></a>
 
 # ⚡ Enterprise Document Intelligence & Comparison Engine
@@ -286,5 +279,7 @@ To maintain application performance and prevent setup issues, keep the following
   <Elicitation label="Generate requirements.txt file contents" query="Give me the exact text needed for the requirements.txt file for this project."/>
   <Elicitation label="Deploy to Streamlit Community Cloud" query="Show me how to deploy this GitHub repository to Streamlit Community Cloud for free."/>
 </ElicitationsGroup>
+
+---
 
 <p align="right"><a href="#top" onclick="scrollToTop(event)" style="text-decoration: none; font-weight: 600;">Back to Top ↑</a></p>
