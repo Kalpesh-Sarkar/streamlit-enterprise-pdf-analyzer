@@ -3,7 +3,6 @@
     event.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  
 </script>
 
 <a id="top"></a>
