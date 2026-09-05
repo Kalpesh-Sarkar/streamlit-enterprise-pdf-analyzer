@@ -103,7 +103,7 @@ The **Enterprise Document Intelligence & Comparison Engine** addresses this chal
                |       Streamlit Interactive UI         |
                | (Summary, Charts, Q&A, Comparison)     |
                +----------------------------------------+
-
+```
 ## 📂 Project Directory Structure
 
 enterprise-doc-intelligence-rag/
