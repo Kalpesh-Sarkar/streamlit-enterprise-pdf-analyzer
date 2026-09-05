@@ -18,7 +18,7 @@
 - [Key Features](#-key-features)
 - [System Architecture](#-system-architecture)
 - [Project Directory Structure](#-project-directory-structure)
-- [Prerequisites & Development Environment](#-prerequisites-development-environment)
+- [Prerequisites & Development Environment](#-prerequisites--development-environment)
 - [Step-by-Step Installation](#-step-by-step-installation)
 - [How to Run the Application](#-how-to-run-the-application)
 - [Detailed Component Breakdown](#-detailed-component-breakdown)
