@@ -104,6 +104,9 @@ The **Enterprise Document Intelligence & Comparison Engine** addresses this chal
                | (Summary, Charts, Q&A, Comparison)     |
                +----------------------------------------+
 ```
+
+---
+
 ## 📂 Project Directory Structure
 ```
 enterprise-doc-intelligence-rag/
@@ -114,6 +117,9 @@ enterprise-doc-intelligence-rag/
     ├── __init__.py         # Package initialization
     └── rag_engine.py       # Core RAG engine: Embeddings, FAISS, Summaries & Comparisons
 ```
+
+---
+
 ## 💻 Prerequisites
 
 Before running the application, ensure your local system meets the following requirements:
@@ -125,6 +131,8 @@ Before running the application, ensure your local system meets the following req
 - RAM: Minimum 4 GB free system memory (8 GB recommended for smoother HuggingFace model loading).
 
 - Storage: ~1.5 GB free disk space (to store model weights locally upon initial run).
+
+---
 
 ## ⚙️ Step-by-Step Installation
 
@@ -147,12 +155,15 @@ macOS / Linux:
 python3 -m venv venv
 source venv/bin/activate
 ```
+
 3. Upgrade Pip & Install Dependencies
 ```
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
+
 ---
+
 ## 🚀 How to Run the Application
 
 Execute the following command in your terminal within the activated virtual environment:
@@ -160,6 +171,8 @@ Execute the following command in your terminal within the activated virtual envi
 python -m streamlit run app.py
 ```
 Streamlit will initialize the environment, download model weights on the first run, and automatically open the application in your default web browser at http://localhost:8501.
+
+---
 
 ## 🛠️ Detailed Component Breakdown
 
@@ -172,6 +185,7 @@ Streamlit will initialize the environment, download model weights on the first r
 - Regular expressions parse generated response strings to display clean interactive question cards.
 
 2. Dynamic Interactive Analytics Studio
+
 - Text strings undergo regex pattern extraction to build dynamic DataFrames for:
 
   - Financial amounts ($M, $B).
