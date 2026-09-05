@@ -116,7 +116,7 @@ The **Enterprise Document Intelligence & Comparison Engine** addresses this chal
 enterprise-doc-intelligence-rag/
 ├── .github/
 │   └── workflows/
-│       └── ci.yml               # Automated syntax & dependency build checks
+│       └── ci.yml           # Automated syntax & dependency build checks
 ├── .streamlit/
 │   └── config.toml          # Streamlit theme & file upload capacity configs
 ├── src/
