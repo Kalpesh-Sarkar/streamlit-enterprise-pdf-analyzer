@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 # ⚡ Enterprise Document Intelligence & Comparison Engine
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.31+-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
@@ -123,7 +125,9 @@ enterprise-doc-intelligence-rag/
 
 ---
 
-## 💻 Prerequisites
+## 💻 Prerequisites & Development Environment
+
+* **IDE Recommendation:** This project was built and optimized using **PyCharm**. Operating the repository through PyCharm makes it significantly easier to manage your Python virtual environment, install requirements via the built-in package manager, and run Streamlit directly from the terminal tool window.
 
 Before running the application, ensure your local system meets the following requirements:
 
@@ -272,3 +276,5 @@ To maintain application performance and prevent setup issues, keep the following
   <Elicitation label="Generate requirements.txt file contents" query="Give me the exact text needed for the requirements.txt file for this project."/>
   <Elicitation label="Deploy to Streamlit Community Cloud" query="Show me how to deploy this GitHub repository to Streamlit Community Cloud for free."/>
 </ElicitationsGroup>
+
+[Back to Top](#top)
