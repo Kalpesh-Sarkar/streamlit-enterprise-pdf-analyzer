@@ -114,12 +114,20 @@ The **Enterprise Document Intelligence & Comparison Engine** addresses this chal
 
 ```text
 enterprise-doc-intelligence-rag/
-├── app.py                  # Main Streamlit application UI & reactive state handling
-├── requirements.txt        # Python dependency specifications
-├── README.md               # Complete project documentation
-└── src/
-    ├── __init__.py         # Package initialization
-    └── rag_engine.py       # Core RAG engine: Embeddings, FAISS, Summaries & Comparisons
+├── .github/
+│   └── workflows/
+│       └── ci.yml               # Automated syntax & dependency build checks
+├── .streamlit/
+│   └── config.toml          # Streamlit theme & file upload capacity configs
+├── src/
+│   └── rag_engine.py        # Core RAG pipeline, FAISS indexing & LLM logic
+├── test_pdfs/
+│   └── sample_maker.py      # Benchmark document generation script
+├── app.py                   # Streamlit dashboard interface & user controls
+├── requirements.txt         # Production dependency manifest
+├── .gitignore               # Excludes virtualenvs, caches, and test artifacts
+├── LICENSE                  # MIT open-source license
+└── README.md                # Technical documentation & navigation index
 
 ```
 
