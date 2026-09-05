@@ -132,3 +132,56 @@ Before running the application, ensure your local system meets the following req
 
 git clone [https://github.com/YOUR-USERNAME/enterprise-doc-intelligence-rag.git](https://github.com/YOUR-USERNAME/enterprise-doc-intelligence-rag.git)
 cd enterprise-doc-intelligence-rag
+
+2. Set Up a Virtual Environment
+
+Creating an isolated environment prevents package conflicts:
+```
+Windows (PowerShell):
+
+python -m venv venv
+.\venv\Scripts\activate
+
+macOS / Linux:
+
+python3 -m venv venv
+source venv/bin/activate
+```
+3. Upgrade Pip & Install Dependencies
+```
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+---
+## 🚀 How to Run the Application
+
+Execute the following command in your terminal within the activated virtual environment:
+```
+python -m streamlit run app.py
+```
+Streamlit will initialize the environment, download model weights on the first run, and automatically open the application in your default web browser at http://localhost:8501.
+
+## 🛠️ Detailed Component Breakdown
+
+1. Executive Summary & Question Framing Engine
+
+- When a PDF is loaded, src/rag_engine.py processes raw text into google/flan-t5-base.
+
+- The model generates a concise bulleted executive overview.
+
+- Regular expressions parse generated response strings to display clean interactive question cards.
+
+2. Dynamic Interactive Analytics Studio
+- Text strings undergo regex pattern extraction to build dynamic DataFrames for:
+
+-- Financial amounts ($M, $B).
+
+-- Relative percentages and metric trends.
+
+-- Keyword frequency rankings (excluding standard English stop words).
+
+- Users can use the Chart Control Bar to adjust keyword density displays, change chart sort orders, filter out specific themes, or isolate specific chunk length ranges.
+
+3. Context-Aware Vector Retrieval Q&A
+
+4. Dual-Document Delta Comparison Engine
