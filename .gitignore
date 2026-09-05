@@ -1,7 +1,19 @@
+# Python environment & builds
 venv/
 .venv/
+env/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+
+# OS & IDE metadata
 .DS_Store
-.env
+Thumbs.db
+.idea/
+.vscode/
+
+# Local data & temporary PDF uploads
 *.pdf
+!.github/*
